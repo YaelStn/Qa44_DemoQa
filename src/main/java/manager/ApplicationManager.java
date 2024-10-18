@@ -51,8 +51,14 @@ public class ApplicationManager {
 
         //можно переключаться между окнами с помощью метода switchTo().window(windowHandle).
         //ukazivaem kakuyu stranizu zakrit a na kakoi rabotaem
-        driver.switchTo().window(tabs.get(1)).close();
-        driver.switchTo().window(tabs.get(0));
+      //  driver.switchTo().window(tabs.get(1)).close();
+        //driver.switchTo().window(tabs.get(0));
+        if (tabs.size() > 1) {
+            driver.switchTo().window(tabs.get(1)).close();  // переключение на второе окно, если оно существует
+            driver.switchTo().window(tabs.get(0));  // переключение обратно на первое окно
+        } else {
+            System.out.println("Открыто только одно окно. Нет второго окна для переключения.");
+        }
 
 
 

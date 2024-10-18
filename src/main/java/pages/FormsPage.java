@@ -11,7 +11,13 @@ public class FormsPage extends BasePages{
         setDriver(driver);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver,10),this);
     }
+    //nasli element  с точным текстом "Practice Form".
+    @FindBy(xpath = "//*[text()='Practice Form']")
+    WebElement btnPracticeForm; //переменная, которая будет представлять найденный элемент.
 
-
+    public AutomationPracticeForm clickBtnPracticeForm(){
+        btnPracticeForm.click();
+        return new AutomationPracticeForm(driver);
+    }
 
 }
