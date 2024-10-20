@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcdf2c9a-ffee-4fe5-b72a-d1e28fb213ff" name="Changes" comment="new POM project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/enums/Hobbies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/enums/StateCity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/dto/StudentDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AutomationPracticeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AutomationPracticeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/PracticeFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PracticeFormTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +52,7 @@
     "Gradle.HomeTests.test.executor": "Run",
     "Gradle.PracticeFormTests.executor": "Run",
     "Gradle.PracticeFormTests.practiceFormPositiveTest.executor": "Run",
+    "Gradle.PracticeFormTests.practiceFormPositiveTestSoft.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
@@ -62,7 +61,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.PracticeFormTests">
+  <component name="RunManager" selected="Gradle.PracticeFormTests.practiceFormPositiveTestSoft">
     <configuration name="HomeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -159,8 +158,33 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PracticeFormTests.practiceFormPositiveTestSoft" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.PracticeFormTests.practiceFormPositiveTestSoft&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PracticeFormTests.practiceFormPositiveTestSoft" />
         <item itemvalue="Gradle.PracticeFormTests" />
         <item itemvalue="Gradle.PracticeFormTests.practiceFormPositiveTest" />
         <item itemvalue="Gradle.HomeTests" />
@@ -198,5 +222,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new POM project" />
     <option name="LAST_COMMIT_MESSAGE" value="new POM project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/PracticeFormTests.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

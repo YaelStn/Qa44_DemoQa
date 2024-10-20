@@ -55,6 +55,9 @@ public class AutomationPracticeForm extends BasePages{
     @FindBy(xpath = "//button[text()='Submit']")
     WebElement btnSubmit;
 
+    @FindBy(id="example-modal-sizes-title-lg")
+    WebElement textThanksFor;
+
 
     //метод, который принимает объект типа StudentDTO и заполняет форму для студента
     public AutomationPracticeForm fillStudentsForm(StudentDTO student) {
@@ -83,10 +86,6 @@ public class AutomationPracticeForm extends BasePages{
         fieldState.sendKeys(Keys.ENTER);
         fieldCity.sendKeys(student.getCity());
         fieldCity.sendKeys(Keys.ENTER);
-       
-
-
-
 
         return this;
     }
@@ -146,6 +145,10 @@ public class AutomationPracticeForm extends BasePages{
     private void clickGender(Gender gender) {
         WebElement elementGender = driver.findElement(By.xpath(gender.getLocator()));
         elementGender.click();
+    }
+
+    public boolean isTextToBePresent_textThanksFor(){
+        return isTextToBePresent(textThanksFor,"Thanks for submitting the form",5);
     }
 
 }

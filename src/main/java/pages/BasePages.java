@@ -26,8 +26,11 @@ public class BasePages {
         js.executeScript("document.querySelector('footer').style.display = 'none'");
     }
 
+    //метод, который проверяет, присутствует ли определённый текст
+    // в указанном веб-элементе в течение заданного времени
     public boolean isTextToBePresent(WebElement element,String text,int time){
-        return new WebDriverWait(driver, Duration.ofSeconds(time)).until(ExpectedConditions.textToBePresentInElement(element,text));
+        return new WebDriverWait(driver, Duration.ofSeconds(time)).until(ExpectedConditions.
+                textToBePresentInElement(element,text));
     }
 
 
